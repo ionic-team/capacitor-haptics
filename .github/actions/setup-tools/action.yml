@@ -9,6 +9,5 @@ runs:
       with:
         node-version: 23
     - name: Install dependencies
-      working-directory: ./packages/capacitor-plugin
       shell: bash
       run: npm i

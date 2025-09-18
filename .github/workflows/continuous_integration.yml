@@ -25,7 +25,6 @@ jobs:
       - name: 'Setup Tools'
         uses: ./.github/actions/setup-tools
       - name: 'Verify Android'
-        working-directory: ./packages/capacitor-plugin
         run: npm run verify:android
 
   verify-plugin-ios:
@@ -37,5 +36,4 @@ jobs:
       - name: 'Setup Tools'
         uses: ./.github/actions/setup-tools
       - name: 'Verify iOS'
-        working-directory: ./packages/capacitor-plugin
         run: npm run verify:ios

@@ -1,21 +1,10 @@
-<div align="center">
-  <a href="https://github.com/ionic-team/capacitor-filesystem">
-    <img src=".github/assets/logo.png" alt="Logo" width="auto" height="100">
-  </a>
+# @capacitor/haptics
 
-<h3 align="center"> @capacitor/haptics</h3>
+The Haptics API provides physical feedback to the user through touch or vibration.
 
-  <p align="center">
-    The Haptics API provides physical feedback to the user through touch or vibration.
-  </p>
-  <p align="center">
-    <a href="https://github.com/ionic-team/capacitor-filesystem/issues/new?labels=bug&template=bug-report.md">🐛 Report Bug</a>
-    ·
-    <a href="https://github.com/ionic-team/capacitor-filesystem/issues/new?labels=enhancement&template=feature-request.md">   💡 Request Feature</a
-  </p>
-</div>
+On devices that don't have Taptic Engine or Vibrator, the API calls will resolve without performing any action.
 
-# Install
+## Install
 
 ```bash
 npm install @capacitor/haptics
@@ -54,4 +43,157 @@ const hapticsSelectionEnd = async () => {
 
 ## API
 
-Check the plugin's API [here](packages/capacitor-plugin/README.md)
+<docgen-index>
+
+* [`impact(...)`](#impact)
+* [`notification(...)`](#notification)
+* [`vibrate(...)`](#vibrate)
+* [`selectionStart()`](#selectionstart)
+* [`selectionChanged()`](#selectionchanged)
+* [`selectionEnd()`](#selectionend)
+* [Interfaces](#interfaces)
+* [Enums](#enums)
+
+</docgen-index>
+
+<docgen-api>
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### impact(...)
+
+```typescript
+impact(options?: ImpactOptions | undefined) => Promise<void>
+```
+
+Trigger a haptics "impact" feedback
+
+| Param         | Type                                                    |
+| ------------- | ------------------------------------------------------- |
+| **`options`** | <code><a href="#impactoptions">ImpactOptions</a></code> |
+
+**Since:** 1.0.0
+
+--------------------
+
+
+### notification(...)
+
+```typescript
+notification(options?: NotificationOptions | undefined) => Promise<void>
+```
+
+Trigger a haptics "notification" feedback
+
+| Param         | Type                                                                |
+| ------------- | ------------------------------------------------------------------- |
+| **`options`** | <code><a href="#notificationoptions">NotificationOptions</a></code> |
+
+**Since:** 1.0.0
+
+--------------------
+
+
+### vibrate(...)
+
+```typescript
+vibrate(options?: VibrateOptions | undefined) => Promise<void>
+```
+
+Vibrate the device
+
+| Param         | Type                                                      |
+| ------------- | --------------------------------------------------------- |
+| **`options`** | <code><a href="#vibrateoptions">VibrateOptions</a></code> |
+
+**Since:** 1.0.0
+
+--------------------
+
+
+### selectionStart()
+
+```typescript
+selectionStart() => Promise<void>
+```
+
+Trigger a selection started haptic hint
+
+**Since:** 1.0.0
+
+--------------------
+
+
+### selectionChanged()
+
+```typescript
+selectionChanged() => Promise<void>
+```
+
+Trigger a selection changed haptic hint. If a selection was
+started already, this will cause the device to provide haptic
+feedback
+
+**Since:** 1.0.0
+
+--------------------
+
+
+### selectionEnd()
+
+```typescript
+selectionEnd() => Promise<void>
+```
+
+If selectionStart() was called, selectionEnd() ends the selection.
+For example, call this when a user has lifted their finger from a control
+
+**Since:** 1.0.0
+
+--------------------
+
+
+### Interfaces
+
+
+#### ImpactOptions
+
+| Prop        | Type                                                | Description                                                                                                                                                                              | Default                        | Since |
+| ----------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ----- |
+| **`style`** | <code><a href="#impactstyle">ImpactStyle</a></code> | Impact Feedback Style The mass of the objects in the collision simulated by a [UIImpactFeedbackGenerator](https://developer.apple.com/documentation/uikit/uiimpactfeedbackstyle) object. | <code>ImpactStyle.Heavy</code> | 1.0.0 |
+
+
+#### NotificationOptions
+
+| Prop       | Type                                                          | Description                                                                                                                                                                                       | Default                               | Since |
+| ---------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | ----- |
+| **`type`** | <code><a href="#notificationtype">NotificationType</a></code> | Notification Feedback Type The type of notification feedback generated by a [UINotificationFeedbackGenerator](https://developer.apple.com/documentation/uikit/uinotificationfeedbacktype) object. | <code>NotificationType.SUCCESS</code> | 1.0.0 |
+
+
+#### VibrateOptions
+
+| Prop           | Type                | Description                                | Default          | Since |
+| -------------- | ------------------- | ------------------------------------------ | ---------------- | ----- |
+| **`duration`** | <code>number</code> | Duration of the vibration in milliseconds. | <code>300</code> | 1.0.0 |
+
+
+### Enums
+
+
+#### ImpactStyle
+
+| Members      | Value                 | Description                                                  | Since |
+| ------------ | --------------------- | ------------------------------------------------------------ | ----- |
+| **`Heavy`**  | <code>'HEAVY'</code>  | A collision between large, heavy user interface elements     | 1.0.0 |
+| **`Medium`** | <code>'MEDIUM'</code> | A collision between moderately sized user interface elements | 1.0.0 |
+| **`Light`**  | <code>'LIGHT'</code>  | A collision between small, light user interface elements     | 1.0.0 |
+
+
+#### NotificationType
+
+| Members       | Value                  | Description                                                                    | Since |
+| ------------- | ---------------------- | ------------------------------------------------------------------------------ | ----- |
+| **`Success`** | <code>'SUCCESS'</code> | A notification feedback type indicating that a task has completed successfully | 1.0.0 |
+| **`Warning`** | <code>'WARNING'</code> | A notification feedback type indicating that a task has produced a warning     | 1.0.0 |
+| **`Error`**   | <code>'ERROR'</code>   | A notification feedback type indicating that a task has failed                 | 1.0.0 |
+
+</docgen-api>

@@ -7,17 +7,12 @@ This guide provides instructions for contributing to this Capacitor plugin.
 ### Local Setup
 
 1. Fork and clone the repo.
-2. Go inside the plugin folder
-   ```shell
-   cd packages/capacitor-plugin
-   ```
-3. Install the dependencies to use the plugin.
+2. Install the dependencies to use the plugin.
 
    ```shell
    npm install
    ```
-
-4. Install SwiftLint if you're on macOS.
+3. Install SwiftLint if you're on macOS.
 
    ```shell
    brew install swiftlint

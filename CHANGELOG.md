@@ -1,3 +1,15 @@
+# [8.0.0-next.1](https://github.com/ionic-team/capacitor-haptics/compare/v7.0.2...v8.0.0-next.1) (2025-09-23)
+
+
+### feature
+
+* Capacitor 8 support ([7d840c7](https://github.com/ionic-team/capacitor-haptics/commit/7d840c78256d44bbee74026a8853c9e150be44f8))
+
+
+### BREAKING CHANGES
+
+* Capacitor 8 requires major update
+
 # [8.0.0-alpha.1](https://github.com/ionic-team/capacitor-plugins/compare/@capacitor/haptics@7.0.2...@capacitor/haptics@8.0.0-alpha.1) (2025-09-08)
 
 **Note:** Version bump only for package @capacitor/haptics

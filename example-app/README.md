@@ -1,6 +1,6 @@
 # Example app
 
-This example app is used to develop and test new features and verify bug fixes for the capacitor haptics plugin, present at the root of this repository.
+This example app is used to develop and test new features and verify bug fixes for the Capacitor Haptics plugin, present at the root of this repository.
 
 It is built with [Ionic React](https://ionicframework.com/react). You should have [Ionic cli installed](https://ionicframework.com/docs/intro/cli).
 

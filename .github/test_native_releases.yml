@@ -1,4 +1,4 @@
-name: "[TEMPORARY] Test native Android and iOS Plugin releases"
+name: "[TEMPORARY] Test native Android and iOS Plugin release pipeline"
 
 on:
   push:

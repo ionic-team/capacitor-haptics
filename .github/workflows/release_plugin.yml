@@ -9,6 +9,7 @@ on:
 
 permissions:
     contents: write
+    packages: write
     issues: write
     deployments: write
     id-token: write # to enable use of OIDC for npm provenance

@@ -63,8 +63,6 @@ export class HapticsWeb extends WebPlugin implements HapticsPlugin {
   private vibrateWithPattern(pattern: number[]) {
     if (navigator.vibrate) {
       navigator.vibrate(pattern);
-    } else {
-      throw this.unavailable('Browser does not support the vibrate API');
     }
   }
 }

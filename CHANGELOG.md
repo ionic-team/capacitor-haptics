@@ -1,3 +1,10 @@
+# [8.0.0-next.2](https://github.com/ionic-team/capacitor-haptics/compare/v8.0.0-next.1...v8.0.0-next.2) (2025-11-10)
+
+
+### Bug Fixes
+
+* **android:** use 'propName = value' assignment syntax in build.gradle files ([e0d3987](https://github.com/ionic-team/capacitor-haptics/commit/e0d3987eead4811e58df1645af525db57cab4f35))
+
 # [8.0.0-next.1](https://github.com/ionic-team/capacitor-haptics/compare/v7.0.2...v8.0.0-next.1) (2025-09-23)
 
 

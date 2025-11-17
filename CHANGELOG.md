@@ -1,3 +1,9 @@
+# [8.0.0-next.3](https://github.com/ionic-team/capacitor-haptics/compare/v8.0.0-next.2...v8.0.0-next.3) (2025-11-17)
+
+
+* **android:** Update gradle dependencies to latest versions
+* **ios:** Minor updates to Package.swift
+
 # [8.0.0-next.2](https://github.com/ionic-team/capacitor-haptics/compare/v8.0.0-next.1...v8.0.0-next.2) (2025-11-10)
 
 

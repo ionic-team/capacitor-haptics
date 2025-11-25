@@ -1,0 +1,7 @@
+{
+  "name": "CAP-HAPT-SAMPLE",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

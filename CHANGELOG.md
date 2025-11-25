@@ -1,7 +1,31 @@
-# Change Log
+# [8.0.0-next.3](https://github.com/ionic-team/capacitor-haptics/compare/v8.0.0-next.2...v8.0.0-next.3) (2025-11-17)
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+* **android:** Update gradle dependencies to latest versions
+* **ios:** Minor updates to Package.swift
+
+# [8.0.0-next.2](https://github.com/ionic-team/capacitor-haptics/compare/v8.0.0-next.1...v8.0.0-next.2) (2025-11-10)
+
+
+### Bug Fixes
+
+* **android:** use 'propName = value' assignment syntax in build.gradle files ([e0d3987](https://github.com/ionic-team/capacitor-haptics/commit/e0d3987eead4811e58df1645af525db57cab4f35))
+
+# [8.0.0-next.1](https://github.com/ionic-team/capacitor-haptics/compare/v7.0.2...v8.0.0-next.1) (2025-09-23)
+
+
+### feature
+
+* Capacitor 8 support ([7d840c7](https://github.com/ionic-team/capacitor-haptics/commit/7d840c78256d44bbee74026a8853c9e150be44f8))
+
+
+### BREAKING CHANGES
+
+* Capacitor 8 requires major update
+
+# [8.0.0-alpha.1](https://github.com/ionic-team/capacitor-plugins/compare/@capacitor/haptics@7.0.2...@capacitor/haptics@8.0.0-alpha.1) (2025-09-08)
+
+**Note:** Version bump only for package @capacitor/haptics
 
 ## [7.0.2](https://github.com/ionic-team/capacitor-plugins/compare/@capacitor/haptics@7.0.1...@capacitor/haptics@7.0.2) (2025-08-05)
 

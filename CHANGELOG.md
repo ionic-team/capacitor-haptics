@@ -1,3 +1,20 @@
+# [8.0.0](https://github.com/ionic-team/capacitor-haptics/compare/v7.0.2...v8.0.0) (2025-12-08)
+
+
+### Bug Fixes
+
+* **android:** use 'propName = value' assignment syntax in build.gradle files ([e0d3987](https://github.com/ionic-team/capacitor-haptics/commit/e0d3987eead4811e58df1645af525db57cab4f35))
+
+
+### feature
+
+* Capacitor 8 support ([7d840c7](https://github.com/ionic-team/capacitor-haptics/commit/7d840c78256d44bbee74026a8853c9e150be44f8))
+
+
+### BREAKING CHANGES
+
+* Capacitor 8 requires major update
+
 # [8.0.0-next.3](https://github.com/ionic-team/capacitor-haptics/compare/v8.0.0-next.2...v8.0.0-next.3) (2025-11-17)
 
 

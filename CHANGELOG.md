@@ -1,3 +1,10 @@
+## [8.0.1](https://github.com/ionic-team/capacitor-haptics/compare/v8.0.0...v8.0.1) (2026-02-24)
+
+
+### Bug Fixes
+
+* **android:** AGP 9.0 no longer supporting `proguard-android.txt` ([#21](https://github.com/ionic-team/capacitor-haptics/issues/21)) ([797ccbe](https://github.com/ionic-team/capacitor-haptics/commit/797ccbe5b89b68ea75838d9ed1106a1c64e84e01))
+
 # [8.0.0](https://github.com/ionic-team/capacitor-haptics/compare/v7.0.2...v8.0.0) (2025-12-08)
 
 

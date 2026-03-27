@@ -3,7 +3,7 @@
 
 ### Documentation updates
 
-* AGP 9.0 no longer supporting `proguard-android.txt` ([#23](https://github.com/ionic-team/capacitor-haptics/issues/23)) ([797ccbe](https://github.com/ionic-team/capacitor-haptics/commit/bbfd42dbda738c90f26ed08aa0c7ca3dc2d0fcae))
+* fix Capitalization on default NotificationType ([#23](https://github.com/ionic-team/capacitor-haptics/issues/23)) ([797ccbe](https://github.com/ionic-team/capacitor-haptics/commit/bbfd42dbda738c90f26ed08aa0c7ca3dc2d0fcae))
 
 ## [8.0.1](https://github.com/ionic-team/capacitor-haptics/compare/v8.0.0...v8.0.1) (2026-02-24)
 

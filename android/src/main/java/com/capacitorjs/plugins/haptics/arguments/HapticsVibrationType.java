@@ -4,6 +4,4 @@ public interface HapticsVibrationType {
     long[] getTimings();
 
     int[] getAmplitudes();
-
-    long[] getOldSDKPattern();
 }

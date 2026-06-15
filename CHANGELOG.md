@@ -1,3 +1,34 @@
+## [8.0.2](https://github.com/ionic-team/capacitor-haptics/compare/v8.0.1...v8.0.2) (2026-03-27)
+
+
+### Documentation updates
+
+* fix Capitalization on default NotificationType ([#23](https://github.com/ionic-team/capacitor-haptics/issues/23)) ([797ccbe](https://github.com/ionic-team/capacitor-haptics/commit/bbfd42dbda738c90f26ed08aa0c7ca3dc2d0fcae))
+
+## [8.0.1](https://github.com/ionic-team/capacitor-haptics/compare/v8.0.0...v8.0.1) (2026-02-24)
+
+
+### Bug Fixes
+
+* **android:** AGP 9.0 no longer supporting `proguard-android.txt` ([#21](https://github.com/ionic-team/capacitor-haptics/issues/21)) ([797ccbe](https://github.com/ionic-team/capacitor-haptics/commit/797ccbe5b89b68ea75838d9ed1106a1c64e84e01))
+
+# [8.0.0](https://github.com/ionic-team/capacitor-haptics/compare/v7.0.2...v8.0.0) (2025-12-08)
+
+
+### Bug Fixes
+
+* **android:** use 'propName = value' assignment syntax in build.gradle files ([e0d3987](https://github.com/ionic-team/capacitor-haptics/commit/e0d3987eead4811e58df1645af525db57cab4f35))
+
+
+### feature
+
+* Capacitor 8 support ([7d840c7](https://github.com/ionic-team/capacitor-haptics/commit/7d840c78256d44bbee74026a8853c9e150be44f8))
+
+
+### BREAKING CHANGES
+
+* Capacitor 8 requires major update
+
 # [8.0.0-next.3](https://github.com/ionic-team/capacitor-haptics/compare/v8.0.0-next.2...v8.0.0-next.3) (2025-11-17)
 
 

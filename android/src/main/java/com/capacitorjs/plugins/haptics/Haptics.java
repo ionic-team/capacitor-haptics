@@ -28,21 +28,7 @@ public class Haptics {
     }
 
     public void vibrate(int duration) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            vibrator.vibrate(VibrationEffect.createOneShot(duration, VibrationEffect.DEFAULT_AMPLITUDE));
-        } else {
-            vibratePre26(duration);
-        }
-    }
-
-    @SuppressWarnings({ "deprecation" })
-    private void vibratePre26(int duration) {
-        vibrator.vibrate(duration);
-    }
-
-    @SuppressWarnings({ "deprecation" })
-    private void vibratePre26(long[] pattern) {
-        vibrator.vibrate(pattern, -1);
+        vibrator.vibrate(VibrationEffect.createOneShot(duration, VibrationEffect.DEFAULT_AMPLITUDE));
     }
 
     public void selectionStart() {
@@ -60,10 +46,6 @@ public class Haptics {
     }
 
     public void performHaptics(HapticsVibrationType type) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            vibrator.vibrate(VibrationEffect.createWaveform(type.getTimings(), type.getAmplitudes(), -1));
-        } else {
-            vibratePre26(type.getOldSDKPattern());
-        }
+        vibrator.vibrate(VibrationEffect.createWaveform(type.getTimings(), type.getAmplitudes(), -1));
     }
 }

@@ -6,14 +6,37 @@ import CoreHaptics
 
     var selectionFeedbackGenerator: UISelectionFeedbackGenerator?
 
+    // Reuse and keep the feedback generators in a prepared state. Apple's docs
+    // recommend calling prepare() ahead of time so the Taptic Engine does not
+    // cold-start on the first impact, which otherwise adds perceptible latency.
+    // Generators are lazily created (and prepared) on first use and re-prepared
+    // after every event so the next trigger stays warm.
+    private lazy var impactGenerators: [UIImpactFeedbackGenerator.FeedbackStyle: UIImpactFeedbackGenerator] = [:]
+    private lazy var notificationGenerator: UINotificationFeedbackGenerator = {
+        let generator = UINotificationFeedbackGenerator()
+        generator.prepare()
+        return generator
+    }()
+
+    private func impactGenerator(for style: UIImpactFeedbackGenerator.FeedbackStyle) -> UIImpactFeedbackGenerator {
+        if let generator = impactGenerators[style] {
+            return generator
+        }
+        let generator = UIImpactFeedbackGenerator(style: style)
+        generator.prepare()
+        impactGenerators[style] = generator
+        return generator
+    }
+
     @objc public func impact(_ impactStyle: UIImpactFeedbackGenerator.FeedbackStyle) {
-        let generator = UIImpactFeedbackGenerator(style: impactStyle)
+        let generator = impactGenerator(for: impactStyle)
         generator.impactOccurred()
+        generator.prepare()
     }
 
     @objc public func notification(_ notificationType: UINotificationFeedbackGenerator.FeedbackType) {
-        let generator = UINotificationFeedbackGenerator()
-        generator.notificationOccurred(notificationType)
+        notificationGenerator.notificationOccurred(notificationType)
+        notificationGenerator.prepare()
     }
 
     @objc public func selectionStart() {

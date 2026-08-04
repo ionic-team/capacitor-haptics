@@ -1,3 +1,15 @@
+# [9.0.0-next.1](https://github.com/ionic-team/capacitor-haptics/compare/v8.0.2...v9.0.0-next.1) (2026-08-04)
+
+
+### Features
+
+* Bump major version to 9 ([#35](https://github.com/ionic-team/capacitor-haptics/issues/35)) ([7141b45](https://github.com/ionic-team/capacitor-haptics/commit/7141b45d233b5c2500441e7b76dba18528a53a2a))
+
+
+### BREAKING CHANGES
+
+* This version includes support for Capacitor 9, which requires a major version bump.
+
 ## [8.0.2](https://github.com/ionic-team/capacitor-haptics/compare/v8.0.1...v8.0.2) (2026-03-27)
 
 

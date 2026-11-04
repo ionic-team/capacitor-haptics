@@ -21,7 +21,7 @@ on:
 
 jobs:
   publish-android:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/fix/RMET-5376/native-android-publishing'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:

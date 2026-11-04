@@ -39,6 +39,7 @@ publish_plugin_android () {
 
                 if grep --quiet "BUILD SUCCESSFUL" $LOG_OUTPUT; then
                     printf %"s\n\n" "Success: $PLUGIN_NAME published to MavenCentral."
+                    cat $LOG_OUTPUT
                 else
                     printf %"s\n\n" "Error publishing $PLUGIN_NAME, check $LOG_OUTPUT for more info! Manually review and release from the Central Portal may be necessary https://central.sonatype.com/publishing/deployments/"
                     cat $LOG_OUTPUT

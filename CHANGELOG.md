@@ -1,3 +1,10 @@
+# [9.0.0-next.2](https://github.com/ionic-team/capacitor-haptics/compare/v9.0.0-next.1...v9.0.0-next.2) (2026-11-06)
+
+
+### Bug Fixes
+
+* native android publishing compatibility with Gradle 9 / AGP 9 ([#43](https://github.com/ionic-team/capacitor-haptics/issues/43)) ([46ff089](https://github.com/ionic-team/capacitor-haptics/commit/46ff0890ee88cd87c29274285e900983dc955ec8))
+
 # [9.0.0-next.1](https://github.com/ionic-team/capacitor-haptics/compare/v8.0.2...v9.0.0-next.1) (2026-08-04)
 
 

@@ -1,3 +1,10 @@
+# [9.0.0-next.3](https://github.com/ionic-team/capacitor-haptics/compare/v9.0.0-next.2...v9.0.0-next.3) (2026-11-20)
+
+
+### Bug Fixes
+
+* **android:** avoid implicit parent project property lookup deprecated in Gradle 9 ([#46](https://github.com/ionic-team/capacitor-haptics/issues/46)) ([b027e03](https://github.com/ionic-team/capacitor-haptics/commit/b027e03a0961c702ad6261bf97ec7a53fb4c2388))
+
 # [9.0.0-next.2](https://github.com/ionic-team/capacitor-haptics/compare/v9.0.0-next.1...v9.0.0-next.2) (2026-11-06)
 
 
